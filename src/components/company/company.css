@@ -1,0 +1,95 @@
+.company{
+    padding:200px 0px;
+}
+.company-header{
+    display:flex;
+    
+}
+.company-title{
+font-family: SF Pro Text;
+font-size: 40px;
+font-weight: 600;
+color:#131313;
+max-width:753px;
+
+}
+.company-text{
+font-family: SF Pro Text;
+font-size: 16px;
+font-weight: 400;
+color:#8C8C8C;
+text-align: right;
+max-width:304px;
+margin-bottom:28px;
+}
+.company-btn{
+font-family: SF Pro Text;
+font-size: 16px;
+font-weight: 500;
+color:#3B75F3;
+padding:13px 27px;
+background-color: #fff;
+border:none;
+border-radius:8px;
+border:1px solid #3B75F3;
+margin-left:43%;
+cursor: pointer;
+}
+.btn-arrow{
+    display:inline-block;
+    margin-left:10px;
+}
+
+.company-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px;
+}
+
+.company-item{
+    background-color: #F5F7FA;
+    border-radius:24px;
+    padding:20px;
+    
+    margin-top:30px;
+}
+.img-company{
+    margin:49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.company-item-text{
+font-family: SF Pro Text;
+font-size: 22px;
+font-weight: 500;
+width: 300px;
+color:#131313;
+margin-bottom: 0;
+}
+.item-number{
+font-family: SF Pro Text;
+font-size: 22px;
+font-weight: 600;
+color:#131313;
+}
+.company-slider .slick-dots{
+    display:none !important;
+}
+.company-slider{
+   padding-top:200px;
+   padding-bottom:10px;
+}
+
+@media(max-width:1200px){
+    .company-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media screen and (max-width:900px){
+    .company-wrapper{
+        grid-template-columns:1fr;
+    }
+    
+}

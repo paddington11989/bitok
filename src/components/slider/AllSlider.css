@@ -1,0 +1,10 @@
+.slider{
+    padding:90px 0px 162px;
+}
+
+.slick-arrow.slick-prev{
+    left:36px !important;
+}
+.slick-next{
+    right:36px !important;
+}

@@ -1,0 +1,123 @@
+.accordion {
+    padding: 200px 0px;
+}
+
+.accordion__wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.accordion-question {
+    max-width: 387px;
+}
+
+div.my-accordion.accordion {
+    padding: 0px;
+}
+
+.question-title {
+    font-family: SF Pro Text;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+.question-title::after {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    content: url(../image/question.svg);
+    width: 128px;
+    height: 128px;
+}
+
+.question-text {
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 400;
+    color: #686868;
+    line-height: 19.09px;
+    max-width: 270px;
+}
+
+.question-btn {
+    color: #3B75F3;
+    border: none;
+    border: 1px solid #3B75F3;
+    border-radius: 8px;
+    padding: 13px 20px;
+    background-color: #fff;
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.question-arrow-btn {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.accordion-block {
+    max-width: 657px;
+}
+
+.accordion .my-accordion-item {
+    margin-bottom: 14px;
+    border-radius: 12px;
+    border: none;
+}
+
+.accordion .my-accordion-item .accordion-header button {
+    font-family: SF Pro Text;
+    font-size: 22px;
+    font-weight: 600;
+    color: #0F0F0F;
+    text-align: left;
+    box-shadow: none;
+
+}
+
+.accordion .my-accordion-item .accordion-header button {
+    border-radius: 12px;
+    background-color: #F5F5F5;
+}
+
+.accordion .my-accordion-item .accordion-header button::after {
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+.accordion-button::after {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center !important;
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+@media(max-width:1200px){
+  .accordion__wrapper {
+    display:grid;
+    grid-template-columns:1fr;
+}
+.accordion-question{
+    max-width:100%;
+}
+.question-title::after{
+    top:0;
+    right:10%;
+}
+.question-text{
+    max-width:70%;
+}
+.accordion-block {
+    max-width: 100%;
+    margin-top:100px;
+}
+}

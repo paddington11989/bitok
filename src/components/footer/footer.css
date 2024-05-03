@@ -1,0 +1,129 @@
+.footer{
+    background-color: #131313;
+    padding:48px 0px 24px;
+    position: relative;
+}
+.footer-vertical-line{
+    position: absolute;
+    top:0;
+    left:40%;
+    width:1px;
+    background-color: #686868;
+    height:100%;
+
+}
+.footer__wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer-logo-text{
+font-family: SF Pro Text;
+font-size: 14px;
+font-weight: 400;
+color:#8C8C8C;
+margin-top:18px;
+margin-bottom:26px;
+
+}
+
+.footer-link{
+    color:#fff;
+    font-family: SF Pro Text;
+font-size: 40px;
+font-weight: 500;
+border-bottom:3px solid #fff;
+display:inline-block;
+text-transform: uppercase;
+margin-bottom:18px;
+
+}
+.footer-logo-text{
+    max-width:320px;
+}
+.footer-social-link{
+    display:flex;
+    align-items: center;
+}
+.footer-link-wrapper{
+    width:40px;
+    height:40px;
+    margin-right:4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-block-about-us{
+    margin-right:83px;
+}
+.footer-about-us-title{
+font-family: SF Pro Text;
+font-size: 16px;
+font-weight: 600;
+color:#fff;
+margin-bottom:30px;
+}
+.about-us-link{
+font-family: SF Pro Text;
+font-size: 14px;
+font-weight: 400;
+color:#8C8C8C;
+display:block;
+margin-bottom:14px;
+}
+.footer-wrapper-about-us{
+    display:flex;
+}
+
+
+.footer-line{
+  position: absolute;
+  bottom:0;
+  left:0;
+  height:1px;
+  width:100%;
+  background-color: #686868;
+}
+
+.footer-made{
+    color:#fff;
+    background-color: #131313;
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.footer-made-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding:23px 0px;
+}
+.footer-copy{
+    font-family: 'Manrope';
+font-size: 12px;
+font-weight: 400;
+color:#686868;
+}
+.footer-text-decor{
+    border-bottom:1px solid #fff;
+}
+
+@media(max-width:1200px){
+    .footer__wrapper{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-wrapper-about-us{
+        display:flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:900px){
+    .footer__wrapper{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+    .footer-vertical-line{
+        display: none;
+    }
+}
