@@ -121,3 +121,9 @@ div.my-accordion.accordion {
     margin-top:100px;
 }
 }
+@media(max-width:1100px){
+    .question-title::after{
+        top:100%;
+        right:10%;
+    } 
+}

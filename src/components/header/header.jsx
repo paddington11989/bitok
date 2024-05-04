@@ -26,12 +26,18 @@ export default function Header(){
                         <a href="#" className="logo-link"><img src={logo} alt=""/></a>
                     </div>
                     <nav className="header__nav">
+                    <div className="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                         <ul className="nav__list">
                             <li className="nav__item"><a href="#" className="nav__link">О компании</a></li>
                             <li className="nav__item"><a href="#" className="nav__link">Новости</a></li>
                             <li className="nav__item"><a href="#" className="nav__link">Контакты</a></li>
                         </ul>
                     </nav>
+                    
                     <div className="header__registr">
                         <button className="header__registr-btn">Войти</button>
                         <button className="header__registr-btn-colored">Зарегистрироваться</button>
