@@ -118,12 +118,36 @@ color:#686868;
         flex-wrap: wrap;
     }
 }
-@media(max-width:900px){
+@media(max-width:1000px){
     .footer__wrapper{
         display:grid;
         grid-template-columns:1fr;
     }
     .footer-vertical-line{
         display: none;
+    }
+    .footer-logo-text{
+        font-size: 18px;
+        max-width: 400px;
+    }
+    .footer-wrapper-about-us{
+        margin-top:50px;
+        flex-wrap: wrap;
+
+    }
+    .footer-block-about-us{
+        width:100%;
+    }
+    .footer-about-us-title{
+        font-size: 24px;
+    }
+    .about-us-link{
+        font-size: 18px;
+    }
+    .footer-copy{
+        font-size: 16px;
+    }
+    .footer-made{
+        font-size: 18px;
     }
 }

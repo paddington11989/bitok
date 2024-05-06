@@ -98,18 +98,22 @@ color:#131313;
     margin:0 auto;
     text-align: center;
     margin-bottom:20px;
+    font-size: 24px;
    }
 }
-@media(max-width:900px){
+@media(max-width:1000px){
     .company-wrapper{
         grid-template-columns:1fr;
     }
-    
-}
-@media(max-width:700px){
-    .company-title{
-        font-size: 36px;
+    .company-btn{
+        font-size: 24px;
+        margin-left:38%;
     }
-   
-    
+    .company-item-text{
+        font-size: 28px;
+        width:500px;
+    }
+    .item-number{
+        font-size: 28px;
+    }
 }

@@ -49,6 +49,7 @@ margin-bottom: 33px;
     border-radius:24px;
     background-color: #fff;
 }
+
 .news__wrapper{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -128,13 +129,36 @@ color: #686868;
     .news-title{
         margin-top:100px;
     }
+    .news-subtitle{
+        margin-top:100px;
+    }
     .news::before{
         top:5%;
         left:-5%;
        
     }
     .news::after{
-        top:20%;
+        top:10%;
         right:0;
+    }
+    .news__wrapper{
+        padding:0px 30px;
+        grid-template-columns:1fr;
+        width:100%;
+        grid-row-gap:50px;
+        margin-left:0;
+    }
+    .news-block-img{
+        width:100%;
+    }
+    .news-block-title{
+        font-size: 36px;
+    }
+    .news-block-text{
+        font-size: 24px;
+    }
+    .news-btn{
+        font-size: 24px;
+        margin-left: 40%;
     }
 }

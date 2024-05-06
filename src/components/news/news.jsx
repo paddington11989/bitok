@@ -14,17 +14,17 @@ export default function News(){
                 <h4 className="news-subtitle">Новости</h4>
                 <div className="news__wrapper">
                     <div className="news-block">
-                        <img src={news_icon_1} alt="" />
+                        <img src={news_icon_1} alt="" className="news-block-img"/>
                         <p className="news-block-title">Решили купить  или продать криптовалюту в Бишкеке?</p>
                         <p className="news-block-text">Прозрачные комиссии, наличие лицензии, большие резервы и отличная реПрозрачные комиссии и отличная</p>
                     </div>
                     <div className="news-block">
-                        <img src={news_icon_2} alt="" />
+                        <img src={news_icon_2} alt="" className="news-block-img"/>
                         <p className="news-block-title">Что говорят эксперты на счет криптовалют?</p>
                         <p className="news-block-text">Прозрачные комиссии, наличие лицензии, большие резервы и отличная реПрозрачные</p>
                     </div>
                     <div className="news-block">
-                        <img src={news_icon_3} alt="" />
+                        <img src={news_icon_3} alt="" className="news-block-img"/>
                         <p className="news-block-title">Решили купить  или продать криптовалюту в Бишкеке?</p>
                         <p className="news-block-text">Прозрачные комиссии, наличие лицензии, большие резервы и отличная реПрозрачные комиссии</p>
                     </div>

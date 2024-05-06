@@ -95,6 +95,7 @@ a{
     display:flex;
     align-items: center;
 }
+
 .nav__link{
     color: #131313;
     font-weight: 500;
@@ -318,15 +319,99 @@ margin-top:18px;
 .header__nav{
   position: relative;
 }
+.nav-toggle{
+  display: none;
+  position: absolute;
+  right: 60px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+}
 
-@media (max-width:1000px){
-  .promo-title{
-    font-size: 36px;
+  .nav-toggle span {
+      width: 100%;
+      transition: .5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      height: 4px;
+      background:#3B75F3;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      transform: rotate(0);}
+
+      .nav-toggle span:nth-child(1) {
+          top: 0;
+      }
+      .nav-toggle span:nth-child(2) {
+          top: 44%;
+          width: 70%;
+      }
+      .nav-toggle span:nth-child(3) {
+          bottom: 0;
+      }
+  
+  
+
+@media screen and (max-width:1000px) {
+  .nav__list{
+    display: none;
+  }
+  .nav-toggle{
+    display:block;
+  }
+  
+  .header__registr{
+    display:none;
+  }
+  .header__logo{
+    margin-left:60px;
+  }
+  .promo__wrapper{
+    display:block;
+  }
+  .promo-btn{
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 30px;
+    font-size: 24px;
   }
   .promo-text{
-    font-size: 14px;
+    font-size: 24px;
+  }
+
+  .promo-block-top-text{
+    font-size: 18px;
+  }
+  .promo-top-text-bold{
+    font-size: 18px;
+  }
+  .text-give{
+    font-size: 24px;
+  }
+  .promo-line-text{
+    font-size: 18px;
+  }
+  .promo-line-text.active{
+    font-size: 18px;
   }
   .item-width{
-    width:395px;
+    max-width:100%;
+  }
+  .promo-card-btn{
+    font-size: 24px;
+  }
+  .menu__item-sum-title{
+    font-size: 28px;
+  }
+  .menu__item-sum-text{
+    font-size: 18px;
+  }
+  .give-summ{
+    font-size: 28px;
   }
 }
+
+

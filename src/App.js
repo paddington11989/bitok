@@ -6,6 +6,7 @@ import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import News from "./components/news/news";
 import AllSlider from "./components/slider/AllSlider";
+import './App.css'
 
 
 

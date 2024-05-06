@@ -104,8 +104,24 @@ cursor: pointer;
     transition: 0.3s;
 }
 
-@media (max-width:970px){
+@media (max-width:1000px){
     .cripto-none{
         display: none;
     }
+    .cripto-table{
+        width:80%;
+    }
+    
+    td{
+        border-bottom: none;
+       padding-left:100px;
+    }
+    .cripto-text{
+        padding-left:100px;
+    }
+    .start-cripto{
+        font-size: 24px;
+        margin-left:35%;
+    }
+    
 }
