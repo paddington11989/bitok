@@ -2,6 +2,7 @@
     background-image: url(../image/news-fon.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     padding:130px 0px 102px;
      border-radius:50px;
      position: relative;

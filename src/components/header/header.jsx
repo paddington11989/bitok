@@ -5,18 +5,21 @@ import topImg from "../image/top-img.svg";
 import dropdownArrow from "../image/dropdown-arrow.svg";
 import logoKgs from "../image/dropdown-logo-kg.svg";
 import getImg from "../image/get-img-solana.svg";
+import { useState } from "react";
 
 export default function Header(){
+     const[isOpen, setIsOpen]=useState(false);
 
+     const toggleMenu =()=>{
+        setIsOpen((open)=>!open);
+     }
+
+     
     
-    // const dropdownarrow= document.querySelector('.dropdown-arrow');
-    // const list = document.querySelector('.dropdown-list-container');
-
-    // dropdownarrow.addEventListener('click',()=>{
-    //   list.classList.toggle('dropdown-list-container-opened');
-    // })
+    
 
     return(
+        
         <>
         <section className="top-screen">
         <div className="top-screen-line"></div>
@@ -26,12 +29,12 @@ export default function Header(){
                         <a href="#" className="logo-link"><img src={logo} alt=""/></a>
                     </div>
                     <nav className="header__nav">
-                    <div className="nav-toggle">
+                    <div className="nav-toggle" onClick={toggleMenu}>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                        <ul className="nav__list">
+                        <ul className={`"nav__list" ${isOpen ? 'isopen':""}`}>
                             <li className="nav__item"><a href="#" className="nav__link">О компании</a></li>
                             <li className="nav__item"><a href="#" className="nav__link">Новости</a></li>
                             <li className="nav__item"><a href="#" className="nav__link">Контакты</a></li>

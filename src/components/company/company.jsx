@@ -19,7 +19,16 @@ export default function Company(){
         infinite: true,
         speed: 500,
         slidesToShow: 3.5,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        responsive:[
+            {
+                breakpoint:1000,
+                settings:{
+                   slidesToShow:1,
+                   slidesToScroll: 1,
+                }
+               },
+        ]
     };
     return(
         <>

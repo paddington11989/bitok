@@ -117,11 +117,14 @@ cursor: pointer;
        padding-left:100px;
     }
     .cripto-text{
-        padding-left:100px;
+        padding-left:70px;
+        font-size: 28px;
     }
     .start-cripto{
         font-size: 24px;
         margin-left:35%;
     }
-    
+    .cripto-text-style{
+        font-size: 28px;
+    }
 }

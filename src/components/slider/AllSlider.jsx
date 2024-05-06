@@ -1,10 +1,10 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slider_1 from '../image/slider-1.jpg'
-import slider_2 from '../image/slider-2.jpg'
-import slider_3 from '../image/slider-3.jpg'
-import slider_4 from '../image/slider-4.jpg'
+import slider_1 from '../image/slider-1.svg'
+import slider_2 from '../image/slider-2.svg'
+import slider_3 from '../image/slider-3.svg'
+import slider_4 from '../image/slider-4.svg'
 import Slider from "react-slick";
 import './AllSlider.css';
 
@@ -18,40 +18,12 @@ const AllSlider = () => {
         slidesToScroll: 3,
         responsive:[
             {
-         breakpoint:1200,
+         breakpoint:1000,
          settings:{
-            slidesToShow:3,
-            slidesToScroll: 2,
+            slidesToShow:1,
+            slidesToScroll: 1,
          }
         },
-        {
-            breakpoint:1000,
-            settings:{
-               slidesToShow:3,
-               slidesToScroll: 2,
-            }
-           },
-        {
-            breakpoint:970,
-            settings:{
-               slidesToShow:2,
-               slidesToScroll: 2,
-            }
-           },
-        {
-            breakpoint:770,
-            settings:{
-               slidesToShow:1.5,
-               slidesToScroll: 1.5,
-            }
-           },
-        {
-            breakpoint:470,
-            settings:{
-               slidesToShow:1,
-               slidesToScroll: 1,
-            }
-           },
         
     ]
 

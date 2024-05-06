@@ -131,7 +131,8 @@ a{
 .top-screen-promo{
   background-image: url(../image/fon.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
+  background-position: center center;
   padding:50px;
   border-radius:40px;
   overflow: hidden;
@@ -345,24 +346,66 @@ margin-top:18px;
       .nav-toggle span:nth-child(1) {
           top: 0;
       }
+      
       .nav-toggle span:nth-child(2) {
           top: 44%;
           width: 70%;
       }
       .nav-toggle span:nth-child(3) {
-          bottom: 0;
+        bottom:0;
       }
-  
-  
+      
 
-@media screen and (max-width:1000px) {
-  .nav__list{
-    display: none;
+
+
+
+      
+  /* active */
+  .nav-toggle .active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.nav-toggle .active span:nth-child(2) {
+  opacity:0;
+}
+.nav-toggle .active span:nth-child(3) {
+  top: 50%;
+  transform:translate(-50%,50%) rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+ 
+@media (max-width:1000px) {
+ 
+  .isopen{
+    display:flex;
+    flex-direction: column;
+    row-gap: 30px;
+    height:100%;
+    width:100%;
+    position: fixed;
+    z-index:50;
+    top:80px;
+    right:0;
+    overflow-y: auto;
+    padding:50px 40px;
+    background: #3B75F3;
+    color:#fff;
+    text-align: center;
+  }
+  .nav__link{
+    color:#fff;
   }
   .nav-toggle{
     display:block;
   }
-  
+
   .header__registr{
     display:none;
   }
