@@ -32,7 +32,7 @@ background-color: #fff;
 border:none;
 border-radius:8px;
 border:1px solid #3B75F3;
-margin-left:43%;
+margin-left:42%;
 cursor: pointer;
 }
 .btn-arrow{
@@ -98,22 +98,34 @@ color:#131313;
     margin:0 auto;
     text-align: center;
     margin-bottom:20px;
-    font-size: 24px;
    }
 }
-@media(max-width:1000px){
+/* @media(max-width:1000px){
     .company-wrapper{
         grid-template-columns:1fr;
     }
     .company-btn{
-        font-size: 24px;
         margin-left:38%;
     }
     .company-item-text{
-        font-size: 28px;
         width:500px;
     }
-    .item-number{
-        font-size: 28px;
+} */
+
+@media(max-width:900px){
+    .company-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .company-item-text{
+        width:500px;
+    }
+    .company-btn{
+        margin-left:38%;
+    }
+}
+@media(max-width:680px){
+    .company-btn{
+        margin-left:36%;
     }
 }

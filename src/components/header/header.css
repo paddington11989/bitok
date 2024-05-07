@@ -323,10 +323,10 @@ margin-top:18px;
 .nav-toggle{
   display: none;
   position: absolute;
-  right: 60px;
+  right: 80px;
   margin: 0 auto;
-  top: 50%;
-  transform: translateY(-50%);
+  /* top: 3%;
+  transform: translateY(-50%); */
   width: 50px;
   height: 40px;
   cursor: pointer;
@@ -359,48 +359,60 @@ margin-top:18px;
 
 
 
-      
-  /* active */
-  .nav-toggle .active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+@media(max-width:1100px){
+  .promo__wrapper{
+    display:block;
+    padding:0px 50px;
+  }
+  .promo-btn{
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 30px;
+    font-size: 24px;
+  }
+  .item-width{
+    max-width:100%;
+  }
 }
-.nav-toggle .active span:nth-child(2) {
-  opacity:0;
-}
-.nav-toggle .active span:nth-child(3) {
-  top: 50%;
-  transform:translate(-50%,50%) rotate(-45deg);
-}
-
-
-
-
 
 
 
 
  
-@media (max-width:1000px) {
- 
-  .isopen{
+@media (max-width:999px) {
+  .header{
+    display: block;
+  }
+  .header-toggle-block{
     display:flex;
-    flex-direction: column;
-    row-gap: 30px;
+  }
+  .isopen{
+    display: block;
     height:100%;
     width:100%;
     position: fixed;
     z-index:50;
-    top:80px;
     right:0;
+    padding-left:20px;
     overflow-y: auto;
-    padding:50px 40px;
-    background: #3B75F3;
-    color:#fff;
+    background: #fff;
     text-align: center;
   }
+  .nav__list{
+    display: none;
+  }
+  ul{
+    padding-left:0;
+  }
+  .nav__list-open{
+    display:flex;
+    flex-direction: column;
+    row-gap:30px;
+    margin-top:60px;
+    justify-content: center;
+  }
   .nav__link{
-    color:#fff;
+    color:#3B75F3;
   }
   .nav-toggle{
     display:block;
@@ -412,49 +424,10 @@ margin-top:18px;
   .header__logo{
     margin-left:60px;
   }
+  
+}
+@media(max-width:890px){
   .promo__wrapper{
-    display:block;
-  }
-  .promo-btn{
-    margin-bottom: 50px;
-    width: 100%;
-    padding: 30px;
-    font-size: 24px;
-  }
-  .promo-text{
-    font-size: 24px;
-  }
-
-  .promo-block-top-text{
-    font-size: 18px;
-  }
-  .promo-top-text-bold{
-    font-size: 18px;
-  }
-  .text-give{
-    font-size: 24px;
-  }
-  .promo-line-text{
-    font-size: 18px;
-  }
-  .promo-line-text.active{
-    font-size: 18px;
-  }
-  .item-width{
-    max-width:100%;
-  }
-  .promo-card-btn{
-    font-size: 24px;
-  }
-  .menu__item-sum-title{
-    font-size: 28px;
-  }
-  .menu__item-sum-text{
-    font-size: 18px;
-  }
-  .give-summ{
-    font-size: 28px;
+    padding:0;
   }
 }
-
-

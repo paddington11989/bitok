@@ -22,9 +22,23 @@ export default function Company(){
         slidesToScroll: 3,
         responsive:[
             {
-                breakpoint:1000,
+                breakpoint:1200,
                 settings:{
-                   slidesToShow:1,
+                   slidesToShow:3,
+                   slidesToScroll: 1,
+                }
+               },
+            {
+                breakpoint:950,
+                settings:{
+                   slidesToShow:2.5,
+                   slidesToScroll: 1,
+                }
+               },
+            {
+                breakpoint:750,
+                settings:{
+                   slidesToShow:2,
                    slidesToScroll: 1,
                 }
                },

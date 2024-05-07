@@ -104,27 +104,34 @@ cursor: pointer;
     transition: 0.3s;
 }
 
-@media (max-width:1000px){
+@media (max-width:999px){
     .cripto-none{
         display: none;
     }
     .cripto-table{
         width:80%;
     }
-    
-    td{
-        border-bottom: none;
-       padding-left:100px;
+    .cripto-price{
+        margin:0 0 0 65%;
     }
     .cripto-text{
-        padding-left:70px;
-        font-size: 28px;
+        margin:0;
+    }
+    .price-text{
+        margin-left:70%;
     }
     .start-cripto{
-        font-size: 24px;
         margin-left:35%;
     }
-    .cripto-text-style{
-        font-size: 28px;
+    
+}
+@media(max-width:890px){
+    .cripto-table{
+        width:90%;
+    }
+}
+@media(max-width:740px){
+    .cripto-table{
+        width:100%;
     }
 }

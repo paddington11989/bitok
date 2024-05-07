@@ -15,17 +15,36 @@ const AllSlider = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 3,
-        responsive:[
+        slidesToScroll: 2,
+        responsive: [
             {
-         breakpoint:1000,
-         settings:{
-            slidesToShow:1,
-            slidesToScroll: 1,
-         }
-        },
-        
-    ]
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3.5,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 2.5,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            }
+          ]
 
     };
     return (

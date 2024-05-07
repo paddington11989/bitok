@@ -127,7 +127,7 @@ div.my-accordion.accordion {
         right:10%;
     } 
 }
-@media(max-width:1000px){
+/* @media(max-width:1000px){
     .question-text{
         font-size: 24px;
         line-height: 28px;
@@ -136,4 +136,4 @@ div.my-accordion.accordion {
         font-size: 24px;
     }
     
-}
+} */

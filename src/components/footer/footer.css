@@ -126,10 +126,7 @@ color:#686868;
     .footer-vertical-line{
         display: none;
     }
-    .footer-logo-text{
-        font-size: 18px;
-        max-width: 400px;
-    }
+    
     .footer-wrapper-about-us{
         margin-top:50px;
         flex-wrap: wrap;
@@ -139,15 +136,8 @@ color:#686868;
         width:100%;
     }
     .footer-about-us-title{
-        font-size: 28px;
+        margin-bottom:20px;
+        margin-top:30px;
     }
-    .about-us-link{
-        font-size: 24px;
-    }
-    .footer-copy{
-        font-size: 18px;
-    }
-    .footer-made{
-        font-size: 20px;
-    }
+    
 }
