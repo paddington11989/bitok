@@ -141,3 +141,8 @@ color:#686868;
     }
     
 }
+@media(max-width:530px){
+    .footer-made-wrapper{
+        flex-direction: column;
+    }
+}

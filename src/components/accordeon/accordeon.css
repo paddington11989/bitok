@@ -127,13 +127,15 @@ div.my-accordion.accordion {
         right:10%;
     } 
 }
-/* @media(max-width:1000px){
-    .question-text{
-        font-size: 24px;
-        line-height: 28px;
-    }
-    .question-btn{
-        font-size: 24px;
-    }
-    
-} */
+@media(max-width:530px){
+    .question-title::after{
+        top:120%;
+        right:10%;
+    } 
+}
+@media(max-width:470px){
+    .question-title::after{
+        top:140%;
+        right:10%;
+    } 
+}

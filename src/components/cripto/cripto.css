@@ -1,5 +1,5 @@
 .cripto-promo{
-    padding:83px 0px 73px;
+    padding:83px 20px 73px;
 }
 .cripto-title{
 font-family: SF Pro Text;
@@ -133,5 +133,29 @@ cursor: pointer;
 @media(max-width:740px){
     .cripto-table{
         width:100%;
+    }
+    .cripto-price{
+        margin:0 0 0 55%;
+        }
+}
+@media(max-width:600px){
+    .start-cripto{
+        margin-left:30%;
+    }
+    
+}
+@media(max-width:540px){
+    .cripto-price{
+        margin:0 0 0 45%;
+        }
+}
+@media(max-width:500px){
+    .cripto-price{
+        margin:0 0 0 35%;
+        }
+}
+@media(max-width:470px){
+    .start-cripto{
+        margin-left:23%;
     }
 }

@@ -42,6 +42,27 @@ export default function Company(){
                    slidesToScroll: 1,
                 }
                },
+            {
+                breakpoint:650,
+                settings:{
+                   slidesToShow:1.7,
+                   slidesToScroll: 1,
+                }
+               },
+            {
+                breakpoint:520,
+                settings:{
+                   slidesToShow:1.3,
+                   slidesToScroll: 1,
+                }
+               },
+            {
+                breakpoint:450,
+                settings:{
+                   slidesToShow:1.1,
+                   slidesToScroll: 1,
+                }
+               },
         ]
     };
     return(
