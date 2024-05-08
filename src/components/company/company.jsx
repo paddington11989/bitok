@@ -68,7 +68,7 @@ export default function Company(){
     return(
         <>
         <section className="company">
-        <div className="container">
+        <div className="container company-container">
         <div className="company-header">
             <h2 className="company-title">Мы - ведущая компания в сфере криптовалют, с глубокими знаниями и опытом</h2>
             <div className="company-header-block">

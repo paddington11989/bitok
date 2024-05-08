@@ -11,7 +11,7 @@ export default function Footer(){
         <>
         <section className="footer">
             <div className="footer-vertical-line"></div>
-            <div className="container">
+            <div className="container footer-container">
                 <div className="footer__wrapper">
                     <div className="footer-block">
                         <div className="footer-logo"><a href="#"><img src={footer_logo} alt="" /></a></div>

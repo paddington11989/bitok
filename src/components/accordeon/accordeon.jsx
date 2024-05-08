@@ -7,7 +7,7 @@ import arrow from '../image/company-arrow.svg';
 function BasicExample() {
   return (
     <section className="accordion">
-      <div className="container">
+      <div className="container accordion-container">
         <div className="accordion__wrapper">
           <div className="accordion-question">
             <h2 className="question-title">Ответы на часто задаваемые вопросы</h2>

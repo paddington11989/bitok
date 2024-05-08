@@ -32,7 +32,8 @@ background-color: #fff;
 border:none;
 border-radius:8px;
 border:1px solid #3B75F3;
-margin-left:42%;
+display:block;
+margin-left:37%;
 cursor: pointer;
 }
 .btn-arrow{
@@ -95,6 +96,7 @@ color:#131313;
     margin:0 auto;
     text-align: center;
     margin-bottom:20px;
+    font-size: 36px;
    }
    .company-text{
     max-width:60%;
@@ -102,18 +104,14 @@ color:#131313;
     text-align: center;
     margin-bottom:20px;
    }
+   .company-item-text{
+    font-size: 16px;
+   }
+   .company-btn{
+    margin:0 auto;
+   }
 }
-/* @media(max-width:1000px){
-    .company-wrapper{
-        grid-template-columns:1fr;
-    }
-    .company-btn{
-        margin-left:38%;
-    }
-    .company-item-text{
-        width:500px;
-    }
-} */
+
 
 @media(max-width:900px){
     .company-wrapper{
@@ -123,18 +121,9 @@ color:#131313;
     .company-item-text{
         width:500px;
     }
-    .company-btn{
-        margin-left:38%;
-    }
 }
-@media(max-width:700px){
 
-}
-@media(max-width:680px){
-    .company-btn{
-        margin-left:36%;
-    }
-}
+
 @media(max-width:600px){
     .company{
         padding:200px 10px 200px 10px;
@@ -144,6 +133,9 @@ color:#131313;
     }
     .company-item-text{
        width:450px;
+    }
+    .company-text{
+        max-width:80%;
     }
 }
 
@@ -155,12 +147,12 @@ color:#131313;
     .company-item-text{
         width:400px;
      }
-     .company-btn{
-        margin-left:30%;
-     }
 }
 
 @media(max-width:520px){
+    .company{
+        padding:200px 0px;
+    }
     .company-item{
         width:94%;
         margin-left:5px;
@@ -168,7 +160,12 @@ color:#131313;
     .company-item-text{
         width:370px;
      }
+     .company-container{
+        padding:0px 20px !important;
+     }
+     
 }
+
 @media(max-width:450px){
     .company-item{
         width:90%;
@@ -180,10 +177,21 @@ color:#131313;
 }
 @media(max-width:430px){
     .company-item{
-        width:88%;
+        width:85%;
         margin-left:5px;
     }
     .company-item-text{
         width:300px;
      }
+}
+
+@media(max-width:380px){
+    .company-item{
+        width:80%;
+        padding:10px;
+    }
+    .company-item-text{
+        width:270px;
+     }
+     
 }

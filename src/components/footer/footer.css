@@ -112,12 +112,15 @@ color:#686868;
     .footer__wrapper{
         display:grid;
         grid-template-columns: 1fr 1fr;
+        grid-column-gap:50px;
     }
     .footer-wrapper-about-us{
         display:flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
     }
 }
+
 @media(max-width:1000px){
     .footer__wrapper{
         display:grid;
@@ -130,11 +133,8 @@ color:#686868;
     .footer-wrapper-about-us{
         margin-top:50px;
         flex-wrap: wrap;
+    }
 
-    }
-    .footer-block-about-us{
-        width:100%;
-    }
     .footer-about-us-title{
         margin-bottom:20px;
         margin-top:30px;
@@ -144,5 +144,16 @@ color:#686868;
 @media(max-width:530px){
     .footer-made-wrapper{
         flex-direction: column;
+    }
+}
+
+@media(max-width:500px){
+    .footer-link{
+        font-size: 36px;
+    }
+}
+@media(max-width:370px){
+    .footer-container{
+        padding:0 20px !important;
     }
 }

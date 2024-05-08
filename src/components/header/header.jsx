@@ -24,7 +24,7 @@ export default function Header() {
         <>
             <section className="top-screen">
                 <div className="top-screen-line"></div>
-                <div className="container">
+                <div className="container header-container">
                     <header className={`header ${isOpen ? 'isopen' : ''}`}>
                         <div className="header-toggle-block">
                         <div className="header__logo">

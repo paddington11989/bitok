@@ -15,7 +15,7 @@ export default function Cripto(){
     return(
         <>
         <section className="cripto-promo">
-        <div className="container">
+        <div className="container cripto-container">
             <h2 className="cripto-title">Популярные криптовалюты</h2>
         <table className="cripto-table">
             <thead className="cripto-head">

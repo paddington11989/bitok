@@ -20,14 +20,32 @@ const AllSlider = () => {
             {
               breakpoint: 1200,
               settings: {
-                slidesToShow: 3.5,
+                slidesToShow:3.5,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true
               }
             },
             {
-              breakpoint: 1000,
+              breakpoint: 1080,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 950,
+              settings: {
+                slidesToShow: 2.7,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 880,
               settings: {
                 slidesToShow: 2.5,
                 slidesToScroll: 1,
@@ -36,7 +54,7 @@ const AllSlider = () => {
               }
             },
             {
-              breakpoint: 900,
+              breakpoint: 760,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -45,7 +63,7 @@ const AllSlider = () => {
               }
             },
             {
-              breakpoint: 680,
+              breakpoint: 600,
               settings: {
                 slidesToShow: 1.5,
                 slidesToScroll: 1,
@@ -54,18 +72,9 @@ const AllSlider = () => {
               }
             },
             {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 1.3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
               breakpoint: 470,
               settings: {
-                slidesToShow: 1.1,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true
@@ -77,7 +86,7 @@ const AllSlider = () => {
     return (
         <>
         <section className="slider">
-        <div className="container slider-wrapper">
+        <div className="container-slider slider-wrapper">
             <div>
                 <Slider {...settings}>
                     <div className="slider-img">

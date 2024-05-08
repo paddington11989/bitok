@@ -9,7 +9,7 @@ export default function News(){
     return(
         <>
         <section className="news">
-            <div className="container">
+            <div className="container news-container">
                 <h2 className="news-title">Наша миссия - сделать цифровые <span className="news-title-colored">финансы</span> доступными и удобными</h2>
                 <h4 className="news-subtitle">Новости</h4>
                 <div className="news__wrapper">

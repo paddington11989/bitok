@@ -3,8 +3,13 @@
 }
 
 .slick-arrow.slick-prev{
-    left:36px !important;
+    left:45px !important;
 }
 .slick-next{
-    right:36px !important;
+    right:45px !important;
 }
+.container-slider{
+    max-width:1140px;
+    margin:0 auto;
+    padding:0px 20px;
+  }
