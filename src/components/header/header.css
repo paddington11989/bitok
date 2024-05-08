@@ -420,7 +420,6 @@ margin-top:18px;
   }
   .nav__link{
     color:#3B75F3;
-    margin-left:0;
   }
   .nav-toggle{
     display:block;
@@ -497,6 +496,9 @@ margin-top:18px;
   }
   .header__logo{
     margin-left:30px;
+  }
+  .isopen{
+    padding-left:0;
   }
   .nav-toggle{
     right:40px;
