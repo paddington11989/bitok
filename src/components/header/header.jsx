@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import logo from "../image/bitok-logo.svg";
 import topImg from "../image/top-img.svg";
-import dropdownArrow from "../image/dropdown-arrow.svg";
+import arrow from "../image/dropdown-arrow.svg";
 import logoKgs from "../image/dropdown-logo-kg.svg";
 import getImg from "../image/get-img-solana.svg";
 import { useState } from "react";
@@ -17,6 +17,10 @@ export default function Header() {
     }
    
 
+    const[listOpen, setListOpen]=useState(false);
+    const listMenu=()=>{
+        setListOpen((listopen)=>!listopen)
+    }
     
 
     return (
@@ -57,7 +61,7 @@ export default function Header() {
                     <div className="promo">
                         <div className="top-screen-promo">
                             <div className="promo__wrapper">
-                                <div className="promo__item">
+                                <div className="promo__item text-item">
                                     <h1 className="promo-title">Лучший сервис по продаже и покупке криптовалют</h1>
                                     <p className="promo-text">Ваш путь к свободе финансов и инновационным возможностям начинается здесь и сейчас. Добро пожаловать в мир криптовалюты!</p>
                                     <button className="promo-btn">Подробнее</button>
@@ -75,91 +79,90 @@ export default function Header() {
                                                     <p className="promo-line-text">Продать</p>
                                                 </div>
                                             </div>
-                                            <div className="promo-card-give">
-                                                <p className="text-give">Вы отдаете:</p>
 
-                                                <div className="dropdown-container">
-                                                    <div className="give-block">
-                                                        <div className="give-summ">0.00</div>
-                                                        <div className="select menu__list">
-                                                            <div className="dropdown-img"><img src={logoKgs} alt="" /></div>
-                                                            <div className="menu__item">
-                                                                <p className="menu__item-sum-title">KGS</p>
-                                                                <p className="menu__item-sum-text give-text">сом</p>
+                                            <div className="promo-form">
+                                                <div className="form-group">
+                                                    <label className="promo-form-label">Вы отдаете:</label>
+                                                    <div className="input-group input-sum-list">
+                                                        <input type="number" className="input-form-number" placeholder="0.00"/>
+                                                        <div className="calc-wrap">
+                                                            <div className="calc-icon"><img src={logoKgs} /></div>
+                                                            <div className="calc-text">
+                                                                <b>KGS</b>
+                                                                <span className="calc-text-uppercase">сом</span>
                                                             </div>
-                                                            <div className="dropdown-arrow"><img src={dropdownArrow} alt="" /></div>
+                                                            <div className="calc-arrow"><img src={arrow} alt="" /></div>
+                                                        </div>
+                                        
+
+
+                                                    </div>
+                                                </div>
+                                                <div className="form-group">
+                                                <label className="promo-form-label">Вы получаете:</label>
+                                                <div className="input-group" onClick={listMenu}>
+                                                        <input type="number" className="input-form-number"  placeholder="0.00"/>
+                                                        <div className="calc-wrap">
+                                                            <div className="calc-icon"><img src={getImg} /></div>
+                                                            <div className="calc-text">
+                                                                <b>SOL</b>
+                                                                <span>Solana</span>
+                                                            </div>
+                                                            <div className="calc-arrow"><img src={arrow} alt="" /></div>
+                                                        </div>
+                                                     <div className={`calc-list ${listOpen ? 'calc-list-open' : ''}`}>
+                                                            <div className="calc-list-wrap">
+                                                                <div className="calc-list-icon"><img src="https://api.bitok.website/uploads/icons/methods/zrx.png" alt="" /></div>
+                                                                <div className="calc-list-text">
+                                                                    <b>OX Protocol</b>
+                                                                    <span>ZRX</span>
+                                                                </div>
+                                                            </div>
+                                                            <div className="calc-list-wrap">
+                                                                <div className="calc-list-icon"><img src="https://api.bitok.website/uploads/icons/methods/btc.svg" alt="" /></div>
+                                                                <div className="calc-list-text">
+                                                                    <b>Bitcoin</b>
+                                                                    <span>BTC</span>
+                                                                </div>
+                                                            </div>
+                                                            <div className="calc-list-wrap">
+                                                                <div className="calc-list-icon"><img src="https://api.bitok.website/uploads/icons/methods/alice.png" alt="" /></div>
+                                                                <div className="calc-list-text">
+                                                                    <b>ALICE</b>
+                                                                    <span>ALICE</span>
+                                                                </div>
+                                                            </div>
+                                                            <div className="calc-list-wrap">
+                                                                <div className="calc-list-icon"><img src="https://api.bitok.website/uploads/icons/methods/dash.png" alt="" /></div>
+                                                                <div className="calc-list-text">
+                                                                    <b>Dash</b>
+                                                                    <span>DASH</span>
+                                                                </div>
+                                                            </div>
+                                                            <div className="calc-list-wrap">
+                                                                <div className="calc-list-icon"><img src="https://api.bitok.website/uploads/icons/methods/cocos.png" alt="" /></div>
+                                                                <div className="calc-list-text">
+                                                                    <b>Cocos</b>
+                                                                    <span>COCOS</span>
+                                                                </div>
+                                                            </div>
+                                                            <div className="calc-list-wrap">
+                                                                <div className="calc-list-icon"><img src="https://api.bitok.website/uploads/icons/methods/ada.png" alt="" /></div>
+                                                                <div className="calc-list-text">
+                                                                    <b>Civic</b>
+                                                                    <span>CIVIC</span>
+                                                                </div>
+                                                            </div>
+                                                            <div className="calc-list-wrap">
+                                                                <div className="calc-list-icon"><img src="https://api.bitok.website/uploads/icons/methods/cvc.png" alt="" /></div>
+                                                                <div className="calc-list-text">
+                                                                    <b>Cardano</b>
+                                                                    <span>ADA</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <ul className="dropdown-list-container">
-                                                        <li className="menu__list">
-                                                            <div className="menu__item"><img src="" alt="" /></div>
-                                                            <div className="menu__item">
-                                                                <p className="menu__item-sum-title">KGS</p>
-                                                                <p className="menu__item-sum-text give-text">сом</p>
-                                                            </div>
-                                                        </li>
-                                                        <li className="menu__list">
-                                                            <div className="menu__item"><img src="" alt="" /></div>
-                                                            <div className="menu__item">
-                                                                <p className="menu__item-sum-title">RUS</p>
-                                                                <p className="menu__item-sum-text give-text">рубль</p>
-                                                            </div>
-                                                        </li>
-                                                        <li className="menu__list">
-                                                            <div className="menu__item"><img src="" alt="" /></div>
-                                                            <div className="menu__item">
-                                                                <p className="menu__item-sum-title">USA</p>
-                                                                <p className="menu__item-sum-text give-text">доллар</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
                                                 </div>
-
-
-
-                                            </div>
-                                            <div className="promo-card-get">
-                                                <p className="text-give">Вы получаете:</p>
-
-                                                <div className="dropdown-container">
-                                                    <div className="give-block">
-                                                        <div className="give-summ">0.00</div>
-                                                        <div className="select menu__list">
-                                                            <div className="dropdown-img"><img src={getImg} alt="" /></div>
-                                                            <div className="menu__item">
-                                                                <p className="menu__item-sum-title">SOL</p>
-                                                                <p className="menu__item-sum-text get-text">Solana</p>
-                                                            </div>
-                                                            <div className="dropdown-arrow"><img src={dropdownArrow} alt="" /></div>
-                                                        </div>
-                                                    </div>
-                                                    <ul className="dropdown-list-container">
-                                                        <li className="menu__list">
-                                                            <div className="menu__item"><img src="" alt="" /></div>
-                                                            <div className="menu__item">
-                                                                <p className="menu__item-sum-title">KGS</p>
-                                                                <p className="menu__item-sum-text get-text">сом</p>
-                                                            </div>
-                                                        </li>
-                                                        <li className="menu__list">
-                                                            <div className="menu__item"><img src="" alt="" /></div>
-                                                            <div className="menu__item">
-                                                                <p className="menu__item-sum-title">RUS</p>
-                                                                <p className="menu__item-sum-text get-text">рубль</p>
-                                                            </div>
-                                                        </li>
-                                                        <li className="menu__list">
-                                                            <div className="menu__item"><img src="" alt="" /></div>
-                                                            <div className="menu__item">
-                                                                <p className="menu__item-sum-title">USA</p>
-                                                                <p className="menu__item-sum-text get-text">доллар</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-
-
                                             </div>
                                             <button className="promo-card-btn">Купить сейчас</button>
 
